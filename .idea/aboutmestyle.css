@@ -1,0 +1,172 @@
+body {
+    margin: 0px;
+    background-color: black;
+}
+
+div#container {
+    min-height: 500px;
+    /*min-width: 900px;*/
+    margin: 0 auto 0 auto;
+    font-family: Arial, sans-serif;
+    /*flex-basis: auto;*/
+}
+
+
+div.header {
+    min-width: 200px;
+    max-width: 600px;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    .logo {
+        width: 75%;
+        min-width: 200px;
+        max-width: 600px;
+        min-height: 90px;
+    }
+
+    .rose-image {
+        width: 20%;
+        min-width: 50px;
+        max-width: 100px;
+    }
+}
+
+
+div.centercontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    section.topnav {
+        background-color: lightgray;
+        margin: 20px;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 17px;
+
+            &:hover {
+                color: red;
+                background-color: lightgray;
+            }
+        }
+    }
+
+    section.work {
+        min-height: 500px;
+        background-color: indianred;
+        width: 500px;
+
+
+        
+        .aboutmepic {
+            display: block;
+            float:left;
+            flex-direction: row;
+            justify-content: right;
+            padding:5px;
+
+        }
+
+        article{
+            display: block;
+            float:center;
+            margin: 10px 5px;
+
+
+            h4 {
+                text-align: left;
+                margin: 1px 5px;
+                color: lightgrey;
+                font-size: 13px;
+                width:100%;
+            }
+
+
+
+
+            h5 {
+                text-align: left;
+                margin: 1px 5px;
+                color: lightgrey;
+                font-size: 8px;
+                width:100%;
+
+
+            }
+        }
+
+        div.aboutmetoptext {
+            p {
+                color: lightgrey;
+                margin: 20PX 10px 10px 50px;
+                font-size: 18px;
+
+
+            }
+        }
+        div.aboutmemiddletext {
+            p {
+                color:lightgrey;
+                margin: 5px 10px;
+                font-size: 18px;
+
+
+            }
+
+        }
+        div.aboutmebottomtext {
+            p {
+                color:lightgrey;
+                margin: 30px 20px 10px 0px;
+                padding:0px 15px;
+                font-size: 18px;
+
+
+            }
+
+        }
+
+
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 50px;
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
+
+}
+
+footer {
+    background-color: lightgray;
+    margin: 20px;
+
+    .footerlogo {
+        display: flex;
+        justify-content: center;
+        /*margin: 4px 600px 9px 600px;*/
+        padding: 5px;
+    }
+}
+
+
+{
+}

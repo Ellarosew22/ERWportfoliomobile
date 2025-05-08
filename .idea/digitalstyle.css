@@ -1,0 +1,99 @@
+body {
+    margin: 0px;
+    background-color: black;
+}
+
+div#container {
+    min-height: 500px;
+    /*min-width: 900px;*/
+    margin: 0 auto 0 auto;
+    font-family: Arial, sans-serif;
+
+    div.header {
+        min-width: 200px;
+        max-width: 600px;
+        font-size: x-large;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+
+        .logo {
+            width: 75%;
+            min-width: 200px;
+            max-width: 600px;
+            min-height: 90px;
+        }
+
+        .rose-image {
+            width: 20%;
+            min-width: 50px;
+            max-width: 100px;
+        }
+    }
+
+    div.centercontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        .topnav {
+            background-color: lightgray;
+            margin: 20px;
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: black;
+                padding: 10px;
+                text-align: center;
+                font-weight: bold;
+                font-size: 17px;
+
+                &:hover {
+                    color: red;
+                    background-color: lightgray;
+                }
+            }
+        }
+
+
+    }
+
+    .allcards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 100px;
+        padding: 30px;
+        align-items: center;
+    }
+    p{
+        justify-content: center;
+        color: lightgrey;
+        font-size: 10px;
+    }
+    h5{
+        color: lightgrey;
+    }
+
+
+
+}
+
+footer {
+    background-color: lightgray;
+    margin: 20px;
+
+    .footerlogo {
+        display: flex;
+        justify-content: center;
+        /*margin: 4px 600px 9px 600px;*/
+        padding: 5px;
+    }
+}
+

@@ -1,0 +1,148 @@
+body {
+    margin: 0px;
+    background-color: black;
+}
+
+div#container {
+    min-height: 500px;
+    /*min-width: 900px;*/
+    margin: 0 auto 0 auto;
+    font-family: Arial, sans-serif;
+
+    div.header {
+        min-width: 200px;
+        max-width: 600px;
+        font-size: x-large;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+
+        .logo {
+            width: 75%;
+            min-width: 200px;
+            max-width: 600px;
+            min-height: 90px;
+        }
+        }
+
+        .rose-image {
+            width: 20%;
+            min-width: 50px;
+            max-width: 100px;
+        }
+    }
+
+    div.centercontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        section.topnav {
+            background-color: lightgray;
+            margin: 20px;
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: black;
+                padding: 10px;
+                text-align: center;
+                font-weight: bold;
+                font-size: 17px;
+
+                &:hover {
+                    color: red;
+                    background-color: lightgray;
+                }
+            }
+        }
+
+        div.whycontact {
+            max-width: 300px;
+            border: 10px solid lightgray;
+            color: indianred;
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+            background: white;
+            padding: 15px 100px;
+            border-radius: 10px;
+
+            .form-stuff {
+                position: relative;
+                margin-bottom: 20px;
+            }
+
+            .form-group input {
+                width: 100%;
+                padding: 12px 12px 12px 12px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                background: none;
+                outline: none;
+            }
+
+            /* Labels */
+
+            .form-group label {
+                position: absolute;
+                top: 12px;
+                left: 12px;
+                background: white;
+                padding: 0 2px;
+                color: darkred;
+                font-size: 16px;
+                pointer-events: none;
+            }
+
+            /* hi Nik!  I had to look up the bottom part because I couldn't figure out how to make it fill out*/
+            .form-group input:focus + label,
+            .form-group input:not(:placeholder-shown) + label {
+                top: -10px;
+                left: 8px;
+                font-size: 12px;
+                color: #333;
+            }
+
+            /* Submit Button */
+
+            button {
+                width: 100%;
+                padding: 12px;
+                background-color: darkred;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: indianred;
+            }
+
+        }
+
+    }
+
+    footer {
+        background-color: lightgray;
+
+        .footerlogo {
+            display: flex;
+            justify-content: center;
+            margin: 10px 800px 3px 800px;
+        }
+    }
+
+
+}
